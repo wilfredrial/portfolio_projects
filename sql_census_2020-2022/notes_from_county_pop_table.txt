@@ -1,0 +1,6 @@
+Note: The estimates are developed from a base that incorporates the 2020 Census, Vintage 2020 estimates, and 2020 Demographic Analysis estimates. The estimates add births to, subtract deaths from, and add net migration to the April 1, 2020 estimates base. For population estimates methodology statements, see https://www.census.gov/programs-surveys/popest/technical-documentation/methodology.html. See Geographic Terms and Definitions at https://www.census.gov/programs-surveys/popest/guidance-geographies/terms-and-definitions.html for a list of the states that are included in each region. All geographic boundaries for the 2022 population estimates series are as of January 1, 2022.   
+Suggested Citation:
+Annual Estimates of the Resident Population for Counties in the United States: April 1, 2020 to July 1, 2022 (CO-EST2022-POP)
+Source: U.S. Census Bureau, Population Division
+Release Date: March 2023
+
