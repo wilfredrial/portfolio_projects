@@ -100,7 +100,7 @@ select
 	round( 
 			(CAST(us_bk.estimate_2022 AS numeric(8,1)) - us_bk.base_2020) 
 			/ us_bk.base_2020 * 100, 
-			1
+			3
 	) AS pct_change_2020_2022
 from us_counties_backup us_bk
 order by pct_change_2020_2022 desc;
@@ -117,7 +117,7 @@ select
 	round( 
 			(CAST(us_bk.estimate_2022 AS numeric(8,1)) - us_bk.base_2020) 
 			/ us_bk.base_2020 * 100, 
-			1
+			3
 	) AS pct_change_2020_2022
 from us_counties_backup us_bk
 where 
@@ -140,7 +140,7 @@ select
 	round( 
 			(CAST(us_bk.estimate_2022 AS numeric(8,1)) - us_bk.base_2020) 
 			/ us_bk.base_2020 * 100, 
-			1
+			3
 	) AS pct_change_2020_2022
 from us_counties_backup us_bk
 where 
@@ -162,7 +162,7 @@ select
 	round( 
 			(CAST(us_bk.estimate_2022 AS numeric(8,1)) - us_bk.base_2020) 
 			/ us_bk.base_2020 * 100, 
-			1
+			3
 	) AS pct_change_2020_2022
 from us_counties_backup us_bk
 order by pop_diff desc;
@@ -177,7 +177,7 @@ select
 	us_bk.base_2020,
 	us_bk.estimate_2022,
 	(us_bk.estimate_2022 - us_bk.base_2020) as pop_diff,
-	round( (CAST(us_bk.estimate_2022 AS numeric(8,1)) - us_bk.base_2020) / us_bk.base_2020 * 100, 1 ) AS pct_change_2020_2022
+	round( (CAST(us_bk.estimate_2022 AS numeric(8,1)) - us_bk.base_2020) / us_bk.base_2020 * 100, 3 ) AS pct_change_2020_2022
 from us_counties_backup us_bk
 order by pop_diff asc;
 -- Los Angeles County lost the most at nearly -300k
@@ -205,7 +205,7 @@ select
 	base_2020,
 	estimate_2022,
 	estimate_2022 - base_2020 as pop_diff,
-	round( (CAST(estimate_2022 AS numeric(9,1)) - base_2020) / base_2020 * 100, 1 ) AS pct_change
+	round( (CAST(estimate_2022 AS numeric(9,1)) - base_2020) / base_2020 * 100, 3 ) AS pct_change
 from 
 	state_pop
 order by pop_diff desc
@@ -232,7 +232,7 @@ select
 	base_2020,
 	estimate_2022,
 	estimate_2022 - base_2020 as pop_diff,
-	round( (CAST(estimate_2022 AS numeric(9,1)) - base_2020) / base_2020 * 100, 1 ) AS pct_change
+	round( (CAST(estimate_2022 AS numeric(9,1)) - base_2020) / base_2020 * 100, 3 ) AS pct_change
 from 
 	state_pop
 order by pop_diff asc
@@ -277,7 +277,7 @@ select
 	base_2020,
 	estimate_2022,
 	estimate_2022 - base_2020 as pop_diff,
-	round( (CAST(estimate_2022 AS numeric(10,1)) - base_2020) / base_2020 * 100, 1 ) AS pct_change
+	round( (CAST(estimate_2022 AS numeric(10,1)) - base_2020) / base_2020 * 100, 3 ) AS pct_change
 from 
 	region_pop
 order by pop_diff desc
@@ -312,7 +312,7 @@ select
 	base_2020,
 	estimate_2022,
 	estimate_2022 - base_2020 as pop_diff,
-	round( (CAST(estimate_2022 AS numeric(10,1)) - base_2020) / base_2020 * 100, 1 ) AS pct_change
+	round( (CAST(estimate_2022 AS numeric(10,1)) - base_2020) / base_2020 * 100, 3 ) AS pct_change
 from 
 	division_pop
 order by pop_diff desc
