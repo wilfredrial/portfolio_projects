@@ -17,7 +17,7 @@ create table us_counties (
 	
 -- Copy data from csv file to table
 copy us_counties --(geo_area, base_2020, estimate_2020, estimate_2021, estimate_2022)
-from '/home/will/Desktop/us_county_pop_20-22.csv'  --'/path/to/us_county_pop_20-22.csv' 
+from '/path/to/us_county_pop_20-22.csv' 
 with (format csv, header);
 
 
@@ -255,7 +255,7 @@ create table us_regions (
 
 -- copy data from csv file to table
 copy us_regions 
-from '/home/will/Desktop/us_state_codes.csv'  --'/path/to/your/csv/file.csv' 
+from '/path/to/your/csv/file.csv' 
 with (format csv, header);
 
 
